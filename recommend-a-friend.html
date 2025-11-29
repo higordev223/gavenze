@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share your opinion and win rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@400;600&family=Sora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="sections.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="global.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center">
+              <a href="/">
+                <img
+                  src="images/6773eea9d0a2565be8d2291929e6e2e683ed383d.png"
+                  alt="Gavenze Logo"
+                  class="logo"
+                />
+              </a>
+              <nav class="main-nav desktop-nav">
+                <a href="#rewards">Rewards</a>
+                <a href="survey.html">Surveys</a>
+                <a href="recommend-a-friend.html">Recommend a Friend</a>
+              </nav>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex justify-content-end gap-3 align-items-center">
+              <div class="desktop-buttons">
+                <a href="login.html" class="btn btn-secondary">
+                  <img
+                    src="images/I77_365_1_2046.svg"
+                    alt=""
+                    class="btn-icon"
+                  />
+                  <span>Sign in</span>
+                </a>
+                <a href="register.html" class="btn btn-outline">
+                  <img
+                    src="images/I77_365_1_2049.svg"
+                    alt=""
+                    class="btn-icon"
+                  />
+                  <span>Sign Up</span>
+                </a>
+              </div>
+              <button
+                class="hamburger-menu"
+                id="hamburgerMenu"
+                aria-label="Toggle menu"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <a href="#rewards" class="mobile-menu-link">Rewards</a>
+          <a href="survey.html" class="mobile-menu-link">Surveys</a>
+          <a href="recommend-a-friend.html" class="mobile-menu-link"
+            >Recommend a Friend</a
+          >
+          <div class="mobile-menu-buttons">
+            <a href="login.html" class="btn btn-secondary">
+              <img src="images/I77_365_1_2046.svg" alt="" class="btn-icon" />
+              <span>Sign in</span>
+            </a>
+            <a href="register.html" class="btn btn-outline">
+              <img src="images/I77_365_1_2049.svg" alt="" class="btn-icon" />
+              <span>Sign Up</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="recommend-a-friend-page" class="page-container auth">
+      <div class="container">
+        <section id="recommend" class="recommend-section">
+          <div class="container">
+            <div class="recommend-content-wrapper">
+              <div class="illustration-container">
+                <img
+                  src="images/c243b1af7bd85b1e0d683f9def6e1122e2ef0f98.png"
+                  alt="Gavenze Logo"
+                  class="logo"
+                />
+                <!--merged image-->
+                <div class="illustration-group">
+                  <img
+                    src="images/developer_outline_III.png"
+                    alt="developer_outline_III"
+                    class="svg-part"
+                  />
+                </div>
+              </div>
+              <div class="text-column">
+                <h1>Recommend to a friend!</h1>
+                <p>
+                  Share with your friends our website! You can invite them to
+                  participate in online surveys and they can earn rewards by
+                  doing it. If they join the website and they finish
+                  successfully at least 3 surveys (profiling surveys don't
+                  count) - you will earn 25 points for each person. <br />
+                  Here is the link that your friends must use to sign up to the
+                  website:
+                </p>
+                <div class="referral-link-wrapper">
+                  <div class="referral-link-box">
+                    <span>https.loremimpsum.com</span>
+                  </div>
+                  <button class="btn-copy">Copy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="referrals-table" class="referrals-table-section">
+          <div class="container">
+            <div class="table-container">
+              <table class="referrals-table">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Username</th>
+                    <th>Date</th>
+                    <th>Surveys Taken</th>
+                    <th>Your Bonus Point</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ashlee</td>
+                    <td>adonn***</td>
+                    <td>27-Nov-2025</td>
+                    <td>
+                      <div class="star-rating">
+                        <svg
+                          class="star filled"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                        <svg
+                          class="star empty"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                        <svg
+                          class="star empty"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                      </div>
+                    </td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>John</td>
+                    <td>john.whi***</td>
+                    <td>27-Nov-2025</td>
+                    <td>
+                      <div class="star-rating">
+                        <svg
+                          class="star filled"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                        <svg
+                          class="star empty"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                        <svg
+                          class="star empty"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                      </div>
+                    </td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Clement</td>
+                    <td>surveymas**</td>
+                    <td>27-Nov-2025</td>
+                    <td>
+                      <div class="star-rating">
+                        <svg
+                          class="star filled"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                        <svg
+                          class="star filled"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                        <svg
+                          class="star filled"
+                          viewBox="0 0 20 20"
+                          width="20"
+                          height="20"
+                        >
+                          <path
+                            d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545L10 15z"
+                          />
+                        </svg>
+                      </div>
+                    </td>
+                    <td>25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="footer" class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="footer-copyright mb-0">
+              ©2025 Gavenze is a brand by Main Frame Ltd
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-links d-flex justify-content-md-end">
+              <a href="terms-conditions.html" class="me-2"
+                >Terms and conditions</a
+              >
+              <span class="me-2">-</span>
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
