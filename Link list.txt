@@ -1,0 +1,28 @@
+http://127.0.0.1:5500/login.html
+http://127.0.0.1:5500/register.html
+http://127.0.0.1:5500/activation-account.html
+http://127.0.0.1:5500/activation-code-sent.html
+http://127.0.0.1:5500/activation-success.html
+http://127.0.0.1:5500/forgot-password.html
+http://127.0.0.1:5500/forgot-password-sent.html
+http://127.0.0.1:5500/forgot-password-reset.html
+Home Pages:
+http://127.0.0.1:5500/index.html
+http://127.0.0.1:5500/home-banner-1.html
+http://127.0.0.1:5500/home-banner-2.html
+http://127.0.0.1:5500/home-banner-3.html
+http://127.0.0.1:5500/home-banner-4.html
+http://127.0.0.1:5500/home-banner-5.html
+http://127.0.0.1:5500/home-banner-6.html
+Survey Pages:
+http://127.0.0.1:5500/survey.html
+http://127.0.0.1:5500/survey-complete.html
+http://127.0.0.1:5500/survey-disqualify.html
+http://127.0.0.1:5500/survey-disqualify-no-image.html
+http://127.0.0.1:5500/survey-not-available.html
+Other Pages:
+http://127.0.0.1:5500/rewards.html
+http://127.0.0.1:5500/unsubscribe.html
+http://127.0.0.1:5500/unsubscribe-password.html
+http://127.0.0.1:5500/terms-conditions.html
+http://127.0.0.1:5500/privacy-policy.html

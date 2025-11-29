@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share your opinion and win rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@400;600&family=Sora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="sections.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="global.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center">
+              <a href="/">
+                <img
+                  src="images/6773eea9d0a2565be8d2291929e6e2e683ed383d.png"
+                  alt="Sondaggi e Premi Logo"
+                  class="logo"
+                />
+              </a>
+              <nav class="main-nav desktop-nav">
+                <a href="#rewards">Rewards</a>
+                <a href="survey.html">Surveys</a>
+              </nav>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex justify-content-end gap-3 align-items-center">
+              <div class="desktop-buttons">
+                <a href="login.html" class="btn btn-primary">
+                  <img
+                    src="images/I77_365_1_2046.svg"
+                    alt=""
+                    class="btn-icon"
+                  />
+                  <span>Sign in</span>
+                </a>
+                <a href="register.html" class="btn btn-outline">
+                  <img
+                    src="images/I77_365_1_2049.svg"
+                    alt=""
+                    class="btn-icon"
+                  />
+                  <span>Sign Up</span>
+                </a>
+              </div>
+              <button
+                class="hamburger-menu"
+                id="hamburgerMenu"
+                aria-label="Toggle menu"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <a href="#rewards" class="mobile-menu-link">Rewards</a>
+          <a href="survey.html" class="mobile-menu-link">Surveys</a>
+          <div class="mobile-menu-buttons">
+            <a href="login.html" class="btn btn-secondary">
+              <img src="images/I77_365_1_2046.svg" alt="" class="btn-icon" />
+              <span>Sign in</span>
+            </a>
+            <a href="register.html" class="btn btn-outline">
+              <img src="images/I77_365_1_2049.svg" alt="" class="btn-icon" />
+              <span>Sign Up</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <section id="survey" class="survey-section">
+        <div class="container">
+          <div class="row align-items-start mb-5">
+            <div class="col-md-6">
+              <div class="user-greeting">
+                <h1>Higor Santiago</h1>
+                <p class="account-label">MY ACCOUNT</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="balance-info text-md-end">
+                <p class="balance-label">Your Balance Points</p>
+                <p class="balance-amount">500</p>
+              </div>
+            </div>
+          </div>
+          <section id="rewards-table">
+            <div class="rewards-container">
+              <div class="table-responsive rewards-table-wrapper">
+                <table class="table rewards-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Reward type</th>
+                      <th scope="col">Value</th>
+                      <th scope="col">Points Cost</th>
+                      <th scope="col" class="text-end"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Name">EMAG - Gift Card</td>
+                      <td data-label="Value">100 LEI</td>
+                      <td data-label="Points Cost">370</td>
+                      <td class="text-end">
+                        <button
+                          type="button"
+                          class="btn exchange-button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exchangeModal"
+                        >
+                          Exchange
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Name">IKEA - Gift Card</td>
+                      <td data-label="Value">100 LEI</td>
+                      <td data-label="Points Cost">370</td>
+                      <td class="text-end">
+                        <button
+                          type="button"
+                          class="btn exchange-button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exchangeModal"
+                        >
+                          Exchange
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Name">Playstation - Gift Card</td>
+                      <td data-label="Value">100 LEI</td>
+                      <td data-label="Points Cost">370</td>
+                      <td class="text-end">
+                        <button
+                          type="button"
+                          class="btn exchange-button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exchangeModal"
+                        >
+                          Exchange
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Name">Playstation - Declaton</td>
+                      <td data-label="Value">100 LEI</td>
+                      <td data-label="Points Cost">370</td>
+                      <td class="text-end">
+                        <button
+                          type="button"
+                          class="btn exchange-button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exchangeModal"
+                        >
+                          Exchange
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Name">H&M</td>
+                      <td data-label="Value">75 LEI</td>
+                      <td data-label="Points Cost">370</td>
+                      <td class="text-end">
+                        <button
+                          type="button"
+                          class="btn exchange-button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exchangeModal"
+                        >
+                          Exchange
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Exchange Confirmation Modal -->
+    <div
+      class="modal fade"
+      id="exchangeModal"
+      tabindex="-1"
+      aria-labelledby="exchangeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content exchange-modal">
+          <div class="modal-header">
+            <h5
+              class="modal-title d-flex align-items-center gap-2"
+              id="exchangeModalLabel"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="#6B7280"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 12L11 15L16 9"
+                  stroke="#6B7280"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Confirmation</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Do you confirm that you would like to exchange your points for
+              rewards?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-cancel" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn-confirm">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="footer-copyright mb-0">
+              ©2025 Sondaggi e Premi is a brand by Main Frame Ltd
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-links d-flex justify-content-md-end">
+              <a href="terms-conditions.html" class="me-2"
+                >Terms and conditions</a
+              >
+              <span class="me-2">-</span>
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
