@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python update_lang_selector_temp.py:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
