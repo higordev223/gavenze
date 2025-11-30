@@ -26,3 +26,4 @@ http://127.0.0.1:5500/unsubscribe.html
 http://127.0.0.1:5500/unsubscribe-password.html
 http://127.0.0.1:5500/terms-conditions.html
 http://127.0.0.1:5500/privacy-policy.html
+http://127.0.0.1:5500/recommend-a-friend.html
