@@ -1084,6 +1084,7 @@ body.menu-open {
 }
 .footer-links {
   display: flex;
+  justify-content: flex-end;
   gap: 8px;
   flex-wrap: wrap;
 }
@@ -1094,7 +1095,7 @@ body.menu-open {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .site-footer .row {
     text-align: center;
     flex-direction: column;
@@ -1107,17 +1108,22 @@ body.menu-open {
   }
   .footer-links {
     justify-content: center;
+  }
+  .footer-copyright,
+  .footer-links a,
+  .footer-links span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
     flex-direction: column;
     align-items: center;
     gap: 12px;
   }
   .footer-links span {
     display: none;
-  }
-  .footer-copyright,
-  .footer-links a,
-  .footer-links span {
-    font-size: 13px;
   }
 }
 
