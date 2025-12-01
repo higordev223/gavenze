@@ -50,54 +50,396 @@
               <div class="d-flex justify-content-end gap-3 align-items-center">
                 <div class="desktop-buttons">
                   <div class="lang-selector">
-                    <button class="lang-toggle" type="button" id="languageDropdown">
-                      <img src="images/flag_uk.png" alt="Flag" class="flag-icon" />
+                    <button
+                      class="lang-toggle"
+                      type="button"
+                      id="languageDropdown"
+                    >
+                      <img
+                        src="images/flag_uk.png"
+                        alt="Flag"
+                        class="flag-icon"
+                      />
                       <span class="lang-current">English</span>
-                      <img src="images/I47_228_4_62.svg" alt="Arrow" class="arrow-icon" />
+                      <img
+                        src="images/I47_228_4_62.svg"
+                        alt="Arrow"
+                        class="arrow-icon"
+                      />
                     </button>
                     <div class="lang-dropdown" id="languageDropdownMenu">
                       <div class="lang-dropdown-inner">
                         <!-- Column 1: 11 items -->
                         <div class="lang-column">
-                          <a class="lang-item" href="#" data-lang="bg" data-flag="images/flag_bulgaria.png"><img src="images/flag_bulgaria.png" alt="" class="flag-icon" /><span>Български</span></a>
-                          <a class="lang-item" href="#" data-lang="cs" data-flag="images/flag_czech.png"><img src="images/flag_czech.png" alt="" class="flag-icon" /><span>Čeština</span></a>
-                          <a class="lang-item" href="#" data-lang="da" data-flag="images/flag_denmark.png"><img src="images/flag_denmark.png" alt="" class="flag-icon" /><span>Dansk</span></a>
-                          <a class="lang-item" href="#" data-lang="de" data-flag="images/flag_germany.png"><img src="images/flag_germany.png" alt="" class="flag-icon" /><span>Deutsch</span></a>
-                          <a class="lang-item" href="#" data-lang="et" data-flag="images/flag_estonia.png"><img src="images/flag_estonia.png" alt="" class="flag-icon" /><span>Eesti</span></a>
-                          <a class="lang-item active" href="#" data-lang="en" data-flag="images/flag_uk.png"><img src="images/flag_uk.png" alt="" class="flag-icon" /><span>English</span></a>
-                          <a class="lang-item" href="#" data-lang="es" data-flag="images/flag_spain.png"><img src="images/flag_spain.png" alt="" class="flag-icon" /><span>Español</span></a>
-                          <a class="lang-item" href="#" data-lang="fr" data-flag="images/flag_france.png"><img src="images/flag_france.png" alt="" class="flag-icon" /><span>Français</span></a>
-                          <a class="lang-item" href="#" data-lang="el" data-flag="images/falg_greece.png"><img src="images/falg_greece.png" alt="" class="flag-icon" /><span>Ελληνικά</span></a>
-                          <a class="lang-item" href="#" data-lang="hr" data-flag="images/flag_croatia.png"><img src="images/flag_croatia.png" alt="" class="flag-icon" /><span>Hrvatski</span></a>
-                          <a class="lang-item" href="#" data-lang="id" data-flag="images/flag_indonesia.png"><img src="images/flag_indonesia.png" alt="" class="flag-icon" /><span>Indonesian</span></a>
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="bg"
+                            data-flag="images/flag_bulgaria.png"
+                            ><img
+                              src="images/flag_bulgaria.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Български</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="cs"
+                            data-flag="images/flag_czech.png"
+                            ><img
+                              src="images/flag_czech.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Čeština</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="da"
+                            data-flag="images/flag_denmark.png"
+                            ><img
+                              src="images/flag_denmark.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Dansk</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="de"
+                            data-flag="images/flag_germany.png"
+                            ><img
+                              src="images/flag_germany.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Deutsch</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="et"
+                            data-flag="images/flag_estonia.png"
+                            ><img
+                              src="images/flag_estonia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Eesti</span></a
+                          >
+                          <a
+                            class="lang-item active"
+                            href="#"
+                            data-lang="en"
+                            data-flag="images/flag_uk.png"
+                            ><img
+                              src="images/flag_uk.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>English</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="es"
+                            data-flag="images/flag_spain.png"
+                            ><img
+                              src="images/flag_spain.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Español</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="fr"
+                            data-flag="images/flag_france.png"
+                            ><img
+                              src="images/flag_france.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Français</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="el"
+                            data-flag="images/falg_greece.png"
+                            ><img
+                              src="images/falg_greece.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Ελληνικά</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="hr"
+                            data-flag="images/flag_croatia.png"
+                            ><img
+                              src="images/flag_croatia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Hrvatski</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="id"
+                            data-flag="images/flag_indonesia.png"
+                            ><img
+                              src="images/flag_indonesia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Indonesian</span></a
+                          >
                         </div>
                         <!-- Column 2: 11 items -->
                         <div class="lang-column">
-                          <a class="lang-item" href="#" data-lang="it" data-flag="images/flag_italy.png"><img src="images/flag_italy.png" alt="" class="flag-icon" /><span>Italiano</span></a>
-                          <a class="lang-item" href="#" data-lang="lv" data-flag="images/flag_latvia.png"><img src="images/flag_latvia.png" alt="" class="flag-icon" /><span>Latviešu</span></a>
-                          <a class="lang-item" href="#" data-lang="lt" data-flag="images/flag_lithuania.png"><img src="images/flag_lithuania.png" alt="" class="flag-icon" /><span>Lietuvių</span></a>
-                          <a class="lang-item" href="#" data-lang="hu" data-flag="images/falg_hungary.png"><img src="images/falg_hungary.png" alt="" class="flag-icon" /><span>Magyar</span></a>
-                          <a class="lang-item" href="#" data-lang="ms" data-flag="images/flag_malaysia.png"><img src="images/flag_malaysia.png" alt="" class="flag-icon" /><span>Malay</span></a>
-                          <a class="lang-item" href="#" data-lang="nl" data-flag="images/flag_netherlands.png"><img src="images/flag_netherlands.png" alt="" class="flag-icon" /><span>Nederlands</span></a>
-                          <a class="lang-item" href="#" data-lang="no" data-flag="images/flag_norway.png"><img src="images/flag_norway.png" alt="" class="flag-icon" /><span>Norsk</span></a>
-                          <a class="lang-item" href="#" data-lang="pl" data-flag="images/flag_poland.png"><img src="images/flag_poland.png" alt="" class="flag-icon" /><span>Polski</span></a>
-                          <a class="lang-item" href="#" data-lang="pt" data-flag="images/flag_portugal.png"><img src="images/flag_portugal.png" alt="" class="flag-icon" /><span>Portuguese</span></a>
-                          <a class="lang-item" href="#" data-lang="ro" data-flag="images/flag_romania.png"><img src="images/flag_romania.png" alt="" class="flag-icon" /><span>Română</span></a>
-                          <a class="lang-item" href="#" data-lang="sk" data-flag="images/flag_slovakia.png"><img src="images/flag_slovakia.png" alt="" class="flag-icon" /><span>Slovenčina</span></a>
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="it"
+                            data-flag="images/flag_italy.png"
+                            ><img
+                              src="images/flag_italy.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Italiano</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="lv"
+                            data-flag="images/flag_latvia.png"
+                            ><img
+                              src="images/flag_latvia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Latviešu</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="lt"
+                            data-flag="images/flag_lithuania.png"
+                            ><img
+                              src="images/flag_lithuania.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Lietuvių</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="hu"
+                            data-flag="images/falg_hungary.png"
+                            ><img
+                              src="images/falg_hungary.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Magyar</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="ms"
+                            data-flag="images/flag_malaysia.png"
+                            ><img
+                              src="images/flag_malaysia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Malay</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="nl"
+                            data-flag="images/flag_netherlands.png"
+                            ><img
+                              src="images/flag_netherlands.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Nederlands</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="no"
+                            data-flag="images/flag_norway.png"
+                            ><img
+                              src="images/flag_norway.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Norsk</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="pl"
+                            data-flag="images/flag_poland.png"
+                            ><img
+                              src="images/flag_poland.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Polski</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="pt"
+                            data-flag="images/flag_portugal.png"
+                            ><img
+                              src="images/flag_portugal.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Portuguese</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="ro"
+                            data-flag="images/flag_romania.png"
+                            ><img
+                              src="images/flag_romania.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Română</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="sk"
+                            data-flag="images/flag_slovakia.png"
+                            ><img
+                              src="images/flag_slovakia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Slovenčina</span></a
+                          >
                         </div>
                         <!-- Column 3: 11 items -->
                         <div class="lang-column">
-                          <a class="lang-item" href="#" data-lang="sl" data-flag="images/flag_slovenia.png"><img src="images/flag_slovenia.png" alt="" class="flag-icon" /><span>Slovenščina</span></a>
-                          <a class="lang-item" href="#" data-lang="sr" data-flag="images/flag_slobain.png"><img src="images/flag_slobain.png" alt="" class="flag-icon" /><span>Srpski</span></a>
-                          <a class="lang-item" href="#" data-lang="fi" data-flag="images/falg_finland.png"><img src="images/falg_finland.png" alt="" class="flag-icon" /><span>Suomi</span></a>
-                          <a class="lang-item" href="#" data-lang="sv" data-flag="images/flag_sweden.png"><img src="images/flag_sweden.png" alt="" class="flag-icon" /><span>Svenska</span></a>
-                          <a class="lang-item" href="#" data-lang="th" data-flag="images/flag_thailand.png"><img src="images/flag_thailand.png" alt="" class="flag-icon" /><span>ภาษาไทย</span></a>
-                          <a class="lang-item" href="#" data-lang="vi" data-flag="images/flag_vietnam.png"><img src="images/flag_vietnam.png" alt="" class="flag-icon" /><span>Tiếng Việt</span></a>
-                          <a class="lang-item" href="#" data-lang="tr" data-flag="images/flag_turkey.png"><img src="images/flag_turkey.png" alt="" class="flag-icon" /><span>Türkçe</span></a>
-                          <a class="lang-item" href="#" data-lang="uk" data-flag="images/flag_ukraine.png"><img src="images/flag_ukraine.png" alt="" class="flag-icon" /><span>Українська</span></a>
-                          <a class="lang-item" href="#" data-lang="zh" data-flag="images/flag_china.png"><img src="images/flag_china.png" alt="" class="flag-icon" /><span>汉语</span></a>
-                          <a class="lang-item" href="#" data-lang="ja" data-flag="images/flag_japan.png"><img src="images/flag_japan.png" alt="" class="flag-icon" /><span>日本語</span></a>
-                          <a class="lang-item" href="#" data-lang="ko" data-flag="images/flag_south_korea.png"><img src="images/flag_south_korea.png" alt="" class="flag-icon" /><span>한국어</span></a>
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="sl"
+                            data-flag="images/flag_slovenia.png"
+                            ><img
+                              src="images/flag_slovenia.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Slovenščina</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="sr"
+                            data-flag="images/flag_slobain.png"
+                            ><img
+                              src="images/flag_slobain.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Srpski</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="fi"
+                            data-flag="images/falg_finland.png"
+                            ><img
+                              src="images/falg_finland.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Suomi</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="sv"
+                            data-flag="images/flag_sweden.png"
+                            ><img
+                              src="images/flag_sweden.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Svenska</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="th"
+                            data-flag="images/flag_thailand.png"
+                            ><img
+                              src="images/flag_thailand.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>ภาษาไทย</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="vi"
+                            data-flag="images/flag_vietnam.png"
+                            ><img
+                              src="images/flag_vietnam.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Tiếng Việt</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="tr"
+                            data-flag="images/flag_turkey.png"
+                            ><img
+                              src="images/flag_turkey.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Türkçe</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="uk"
+                            data-flag="images/flag_ukraine.png"
+                            ><img
+                              src="images/flag_ukraine.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>Українська</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="zh"
+                            data-flag="images/flag_china.png"
+                            ><img
+                              src="images/flag_china.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>汉语</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="ja"
+                            data-flag="images/flag_japan.png"
+                            ><img
+                              src="images/flag_japan.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>日本語</span></a
+                          >
+                          <a
+                            class="lang-item"
+                            href="#"
+                            data-lang="ko"
+                            data-flag="images/flag_south_korea.png"
+                            ><img
+                              src="images/flag_south_korea.png"
+                              alt=""
+                              class="flag-icon"
+                            /><span>한국어</span></a
+                          >
                         </div>
                       </div>
                     </div>
@@ -141,51 +483,389 @@
             >
             <div class="mobile-lang-selector">
               <div class="lang-selector">
-                <button class="lang-toggle" type="button" id="mobileLanguageDropdown">
+                <button
+                  class="lang-toggle"
+                  type="button"
+                  id="mobileLanguageDropdown"
+                >
                   <img src="images/flag_uk.png" alt="Flag" class="flag-icon" />
                   <span class="lang-current">English</span>
-                  <img src="images/I47_228_4_62.svg" alt="Arrow" class="arrow-icon" />
+                  <img
+                    src="images/I47_228_4_62.svg"
+                    alt="Arrow"
+                    class="arrow-icon"
+                  />
                 </button>
                 <div class="lang-dropdown" id="mobileLanguageDropdownMenu">
                   <div class="lang-dropdown-inner">
                     <div class="lang-column">
-                      <a class="lang-item" href="#" data-lang="bg" data-flag="images/flag_bulgaria.png"><img src="images/flag_bulgaria.png" alt="" class="flag-icon" /><span>Български</span></a>
-                      <a class="lang-item" href="#" data-lang="cs" data-flag="images/flag_czech.png"><img src="images/flag_czech.png" alt="" class="flag-icon" /><span>Čeština</span></a>
-                      <a class="lang-item" href="#" data-lang="da" data-flag="images/flag_denmark.png"><img src="images/flag_denmark.png" alt="" class="flag-icon" /><span>Dansk</span></a>
-                      <a class="lang-item" href="#" data-lang="de" data-flag="images/flag_germany.png"><img src="images/flag_germany.png" alt="" class="flag-icon" /><span>Deutsch</span></a>
-                      <a class="lang-item" href="#" data-lang="et" data-flag="images/flag_estonia.png"><img src="images/flag_estonia.png" alt="" class="flag-icon" /><span>Eesti</span></a>
-                      <a class="lang-item active" href="#" data-lang="en" data-flag="images/flag_uk.png"><img src="images/flag_uk.png" alt="" class="flag-icon" /><span>English</span></a>
-                      <a class="lang-item" href="#" data-lang="es" data-flag="images/flag_spain.png"><img src="images/flag_spain.png" alt="" class="flag-icon" /><span>Español</span></a>
-                      <a class="lang-item" href="#" data-lang="fr" data-flag="images/flag_france.png"><img src="images/flag_france.png" alt="" class="flag-icon" /><span>Français</span></a>
-                      <a class="lang-item" href="#" data-lang="el" data-flag="images/falg_greece.png"><img src="images/falg_greece.png" alt="" class="flag-icon" /><span>Ελληνικά</span></a>
-                      <a class="lang-item" href="#" data-lang="hr" data-flag="images/flag_croatia.png"><img src="images/flag_croatia.png" alt="" class="flag-icon" /><span>Hrvatski</span></a>
-                      <a class="lang-item" href="#" data-lang="id" data-flag="images/flag_indonesia.png"><img src="images/flag_indonesia.png" alt="" class="flag-icon" /><span>Indonesian</span></a>
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="bg"
+                        data-flag="images/flag_bulgaria.png"
+                        ><img
+                          src="images/flag_bulgaria.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Български</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="cs"
+                        data-flag="images/flag_czech.png"
+                        ><img
+                          src="images/flag_czech.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Čeština</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="da"
+                        data-flag="images/flag_denmark.png"
+                        ><img
+                          src="images/flag_denmark.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Dansk</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="de"
+                        data-flag="images/flag_germany.png"
+                        ><img
+                          src="images/flag_germany.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Deutsch</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="et"
+                        data-flag="images/flag_estonia.png"
+                        ><img
+                          src="images/flag_estonia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Eesti</span></a
+                      >
+                      <a
+                        class="lang-item active"
+                        href="#"
+                        data-lang="en"
+                        data-flag="images/flag_uk.png"
+                        ><img
+                          src="images/flag_uk.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>English</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="es"
+                        data-flag="images/flag_spain.png"
+                        ><img
+                          src="images/flag_spain.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Español</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="fr"
+                        data-flag="images/flag_france.png"
+                        ><img
+                          src="images/flag_france.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Français</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="el"
+                        data-flag="images/falg_greece.png"
+                        ><img
+                          src="images/falg_greece.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Ελληνικά</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="hr"
+                        data-flag="images/flag_croatia.png"
+                        ><img
+                          src="images/flag_croatia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Hrvatski</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="id"
+                        data-flag="images/flag_indonesia.png"
+                        ><img
+                          src="images/flag_indonesia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Indonesian</span></a
+                      >
                     </div>
                     <div class="lang-column">
-                      <a class="lang-item" href="#" data-lang="it" data-flag="images/flag_italy.png"><img src="images/flag_italy.png" alt="" class="flag-icon" /><span>Italiano</span></a>
-                      <a class="lang-item" href="#" data-lang="lv" data-flag="images/flag_latvia.png"><img src="images/flag_latvia.png" alt="" class="flag-icon" /><span>Latviešu</span></a>
-                      <a class="lang-item" href="#" data-lang="lt" data-flag="images/flag_lithuania.png"><img src="images/flag_lithuania.png" alt="" class="flag-icon" /><span>Lietuvių</span></a>
-                      <a class="lang-item" href="#" data-lang="hu" data-flag="images/falg_hungary.png"><img src="images/falg_hungary.png" alt="" class="flag-icon" /><span>Magyar</span></a>
-                      <a class="lang-item" href="#" data-lang="ms" data-flag="images/flag_malaysia.png"><img src="images/flag_malaysia.png" alt="" class="flag-icon" /><span>Malay</span></a>
-                      <a class="lang-item" href="#" data-lang="nl" data-flag="images/flag_netherlands.png"><img src="images/flag_netherlands.png" alt="" class="flag-icon" /><span>Nederlands</span></a>
-                      <a class="lang-item" href="#" data-lang="no" data-flag="images/flag_norway.png"><img src="images/flag_norway.png" alt="" class="flag-icon" /><span>Norsk</span></a>
-                      <a class="lang-item" href="#" data-lang="pl" data-flag="images/flag_poland.png"><img src="images/flag_poland.png" alt="" class="flag-icon" /><span>Polski</span></a>
-                      <a class="lang-item" href="#" data-lang="pt" data-flag="images/flag_portugal.png"><img src="images/flag_portugal.png" alt="" class="flag-icon" /><span>Portuguese</span></a>
-                      <a class="lang-item" href="#" data-lang="ro" data-flag="images/flag_romania.png"><img src="images/flag_romania.png" alt="" class="flag-icon" /><span>Română</span></a>
-                      <a class="lang-item" href="#" data-lang="sk" data-flag="images/flag_slovakia.png"><img src="images/flag_slovakia.png" alt="" class="flag-icon" /><span>Slovenčina</span></a>
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="it"
+                        data-flag="images/flag_italy.png"
+                        ><img
+                          src="images/flag_italy.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Italiano</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="lv"
+                        data-flag="images/flag_latvia.png"
+                        ><img
+                          src="images/flag_latvia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Latviešu</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="lt"
+                        data-flag="images/flag_lithuania.png"
+                        ><img
+                          src="images/flag_lithuania.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Lietuvių</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="hu"
+                        data-flag="images/falg_hungary.png"
+                        ><img
+                          src="images/falg_hungary.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Magyar</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="ms"
+                        data-flag="images/flag_malaysia.png"
+                        ><img
+                          src="images/flag_malaysia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Malay</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="nl"
+                        data-flag="images/flag_netherlands.png"
+                        ><img
+                          src="images/flag_netherlands.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Nederlands</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="no"
+                        data-flag="images/flag_norway.png"
+                        ><img
+                          src="images/flag_norway.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Norsk</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="pl"
+                        data-flag="images/flag_poland.png"
+                        ><img
+                          src="images/flag_poland.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Polski</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="pt"
+                        data-flag="images/flag_portugal.png"
+                        ><img
+                          src="images/flag_portugal.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Portuguese</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="ro"
+                        data-flag="images/flag_romania.png"
+                        ><img
+                          src="images/flag_romania.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Română</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="sk"
+                        data-flag="images/flag_slovakia.png"
+                        ><img
+                          src="images/flag_slovakia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Slovenčina</span></a
+                      >
                     </div>
                     <div class="lang-column">
-                      <a class="lang-item" href="#" data-lang="sl" data-flag="images/flag_slovenia.png"><img src="images/flag_slovenia.png" alt="" class="flag-icon" /><span>Slovenščina</span></a>
-                      <a class="lang-item" href="#" data-lang="sr" data-flag="images/flag_slobain.png"><img src="images/flag_slobain.png" alt="" class="flag-icon" /><span>Srpski</span></a>
-                      <a class="lang-item" href="#" data-lang="fi" data-flag="images/falg_finland.png"><img src="images/falg_finland.png" alt="" class="flag-icon" /><span>Suomi</span></a>
-                      <a class="lang-item" href="#" data-lang="sv" data-flag="images/flag_sweden.png"><img src="images/flag_sweden.png" alt="" class="flag-icon" /><span>Svenska</span></a>
-                      <a class="lang-item" href="#" data-lang="th" data-flag="images/flag_thailand.png"><img src="images/flag_thailand.png" alt="" class="flag-icon" /><span>ภาษาไทย</span></a>
-                      <a class="lang-item" href="#" data-lang="vi" data-flag="images/flag_vietnam.png"><img src="images/flag_vietnam.png" alt="" class="flag-icon" /><span>Tiếng Việt</span></a>
-                      <a class="lang-item" href="#" data-lang="tr" data-flag="images/flag_turkey.png"><img src="images/flag_turkey.png" alt="" class="flag-icon" /><span>Türkçe</span></a>
-                      <a class="lang-item" href="#" data-lang="uk" data-flag="images/flag_ukraine.png"><img src="images/flag_ukraine.png" alt="" class="flag-icon" /><span>Українська</span></a>
-                      <a class="lang-item" href="#" data-lang="zh" data-flag="images/flag_china.png"><img src="images/flag_china.png" alt="" class="flag-icon" /><span>汉语</span></a>
-                      <a class="lang-item" href="#" data-lang="ja" data-flag="images/flag_japan.png"><img src="images/flag_japan.png" alt="" class="flag-icon" /><span>日本語</span></a>
-                      <a class="lang-item" href="#" data-lang="ko" data-flag="images/flag_south_korea.png"><img src="images/flag_south_korea.png" alt="" class="flag-icon" /><span>한국어</span></a>
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="sl"
+                        data-flag="images/flag_slovenia.png"
+                        ><img
+                          src="images/flag_slovenia.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Slovenščina</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="sr"
+                        data-flag="images/flag_slobain.png"
+                        ><img
+                          src="images/flag_slobain.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Srpski</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="fi"
+                        data-flag="images/falg_finland.png"
+                        ><img
+                          src="images/falg_finland.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Suomi</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="sv"
+                        data-flag="images/flag_sweden.png"
+                        ><img
+                          src="images/flag_sweden.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Svenska</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="th"
+                        data-flag="images/flag_thailand.png"
+                        ><img
+                          src="images/flag_thailand.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>ภาษาไทย</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="vi"
+                        data-flag="images/flag_vietnam.png"
+                        ><img
+                          src="images/flag_vietnam.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Tiếng Việt</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="tr"
+                        data-flag="images/flag_turkey.png"
+                        ><img
+                          src="images/flag_turkey.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Türkçe</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="uk"
+                        data-flag="images/flag_ukraine.png"
+                        ><img
+                          src="images/flag_ukraine.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>Українська</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="zh"
+                        data-flag="images/flag_china.png"
+                        ><img
+                          src="images/flag_china.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>汉语</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="ja"
+                        data-flag="images/flag_japan.png"
+                        ><img
+                          src="images/flag_japan.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>日本語</span></a
+                      >
+                      <a
+                        class="lang-item"
+                        href="#"
+                        data-lang="ko"
+                        data-flag="images/flag_south_korea.png"
+                        ><img
+                          src="images/flag_south_korea.png"
+                          alt=""
+                          class="flag-icon"
+                        /><span>한국어</span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -361,64 +1041,34 @@
           <div class="rewards-panel">
             <div class="rewards-grid">
               <div class="reward-item">
-                <img
-                  src="images/cbcb11da285f4da2ba8a328107f1cbe9369d380b.png"
-                  alt="IKEA logo"
-                />
+                <img src="images/rewards_visa.PNG" alt="Visa logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/01c15b1a5c279bb2278ee11003d0df9066150e71.png"
-                  alt="Uber Eats logo"
-                />
+                <img src="images/rewards-paypal.PNG" alt="Paypal logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/2f6313d4b0d84f7a8a46080b18c019526d6edbb0.png"
-                  alt="Zalando logo"
-                />
+                <img src="images/rewards-google.PNG" alt="GooglePlay logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/99b4b954a73e6de00f88359166d3118cd088857b.png"
-                  alt="Nike logo"
-                />
+                <img src="images/rewards-hm.PNG" alt="HM logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/7ed561dc28d661f223a7c509a0a81152783aa6e1.png"
-                  alt="Takeaway.com logo"
-                />
+                <img src="images/rewards-ikea.PNG" alt="IKEA logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/2aaf5eee592a40aa53108b504a73dbdeddb7d5de.png"
-                  alt="Adidas logo"
-                />
+                <img src="images/rewards-nike.PNG" alt="Nike logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/4782c9de57154258247a32fa98e08f5c909c3e6f.png"
-                  alt="PayPal logo"
-                />
+                <img src="images/rewards-adidas.PNG" alt="Adidas logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/70160d3652fc1c417cc8f126cc4ff907723501f3.png"
-                  alt="Visa logo"
-                />
+                <img src="images/rewards-zalando.PNG" alt="Zalando logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/54c877f661ec6cf2040447b6b70eaa9aa544f433.png"
-                  alt="Bol.com logo"
-                />
+                <img src="images/rewards-amazon.PNG" alt="Amazon logo" />
               </div>
               <div class="reward-item">
-                <img
-                  src="images/ed1d3af94c04d9e9b5b91c942a953dad826b07ef.png"
-                  alt="Amazon logo"
-                />
+                <img src="images/rewards-uber.PNG" alt="Uber logo" />
               </div>
             </div>
           </div>
